@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "No-EM-Dash",
+  "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
+  "author": "Your Name",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://fragdaspdf.de/*",
+    "https://intellipaper.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://fragdaspdf.de/*",
+        "https://intellipaper.ai/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

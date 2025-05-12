@@ -1,0 +1,27 @@
+{
+  "license": "MIT",
+  "name": "No-EM-Dash",
+  "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
+  "version": "0.0.1",
+  "keywords": [
+    "extension",
+    "browser-extension",
+    "web-extension",
+    "template"
+  ],
+  "scripts": {
+    "dev": "extension dev",
+    "start": "extension start",
+    "build": "extension build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "extension": "^2.0.0-rc.23"
+  },
+  "private": true,
+  "author": {
+    "name": "Your Name",
+    "email": "your@email.com",
+    "url": "https://yourwebsite.com"
+  }
+}
