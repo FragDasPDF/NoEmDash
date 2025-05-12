@@ -1,35 +1,39 @@
-# No-EM-Dash
+# No-EM-Dash Chrome Extension
 
-> A minimum extension template. This template includes a manifest file.
+Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites with your preferred separator (comma, colon, parentheses, or hyphen).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run the following scripts:
+- Automatically replaces em dashes in chat and message content
+- Works on chat.openai.com, chatgpt.com, fragdaspdf.de, and intellipaper.ai
+- Choose your preferred separator in the options page
+- Modern, accessible, and responsive options UI
+- No unnecessary permissions or background scripts
 
-### npm dev
+## Installation
 
-**Development Mode**: This command runs your extension in development mode. It will launch a new browser instance with your extension loaded. The page will automatically reload whenever you make changes to your code, allowing for a smooth development experience.
+1. Download or clone this repository.
+2. Build the extension (optional, for `dist/` folder):
+   ```bash
+   npm install
+   npm run build
+   ```
+   Or, use the root folder directly.
+3. Open Chrome and go to `chrome://extensions/`.
+4. Enable "Developer mode" (top right).
+5. Click "Load unpacked" and select the `dist/` folder (or the root folder if not using a build step).
 
-```bash
-npm dev
-```
+## Usage
 
-### npm start
+- The extension will automatically replace em dashes in supported sites.
+- To change the separator, right-click the extension icon and choose "Options" (or go to the options page in the extension menu).
+- Select your preferred separator and your choice will be saved and synced.
 
-**Production Preview**: This command runs your extension in production mode. It will launch a new browser instance with your extension loaded, simulating the environment and behavior of your extension as it will appear once published.
+## Support
 
-```bash
-npm start
-```
+- If you encounter issues, please open an issue on the repository or contact the author.
+- No user data is collected or transmitted.
 
-### npm build
+## License
 
-**Build for Production**: This command builds your extension for production. It optimizes and bundles your extension, preparing it for deployment to the target browser's store.
-
-```bash
-npm build
-```
-
-## Learn More
-
-To learn more about creating cross-browser extensions with Extension.js, visit the [official documentation](https://extension.js.org).
+MIT

@@ -1,4 +1,10 @@
-// Function to replace em dashes with the user's preferred separator
+// No-EM-Dash Content Script
+// Replaces em dashes in ChatGPT and supported sites with the user's preferred separator
+
+/**
+ * Replaces all em dashes in relevant conversation elements with the user's chosen separator.
+ * For ChatGPT, targets conversation turns and their text content.
+ */
 function replaceEmDashes() {
   const emDash = "—";
 
@@ -7,7 +13,7 @@ function replaceEmDashes() {
     // Add space after comma if that's the separator
     const replacement = separator === "," ? ", " : separator;
 
-    // Target all conversation turns
+    // Target all conversation turns in ChatGPT and similar UIs
     const conversationTurns = document.querySelectorAll('article[data-testid^="conversation-turn-"]');
 
     conversationTurns.forEach((turn) => {
@@ -23,7 +29,7 @@ function replaceEmDashes() {
   });
 }
 
-// Create a MutationObserver to watch for new messages
+// Observe DOM changes to handle dynamically loaded content (e.g., new chat messages)
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     if (mutation.addedNodes.length) {
@@ -32,7 +38,7 @@ const observer = new MutationObserver((mutations) => {
   });
 });
 
-// Start observing when the page loads
+// Initial run and observer setup on page load
 window.addEventListener("load", () => {
   replaceEmDashes();
   observer.observe(document.body, {

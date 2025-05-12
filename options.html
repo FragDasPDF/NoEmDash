@@ -1,50 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>No-EM-Dash Options</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            width: 300px;
-            padding: 20px;
-            font-family: Arial, sans-serif;
+            background: #4B3CF7;
+            color: #fff;
+            font-family: 'Inter', Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .option-group {
-            margin-bottom: 20px;
+        .container {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            padding: 32px 28px 24px 28px;
+            min-width: 320px;
+            max-width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
         }
 
         label {
-            display: block;
+            font-size: 1rem;
             margin-bottom: 10px;
+            font-weight: 500;
         }
 
         select {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            border: none;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            background: #fff;
+            color: #222;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(75, 60, 247, 0.08);
+            outline: none;
+            transition: box-shadow 0.2s;
+        }
+
+        select:focus {
+            box-shadow: 0 0 0 2px #FFD600;
         }
 
         .powered-by {
-            margin-top: 30px;
+            margin-top: 24px;
             text-align: center;
-            font-size: 12px;
-            color: #666;
         }
 
-        .powered-by a {
-            color: #0066cc;
+        .powered-link {
+            display: inline-block;
+            background: #FFD600;
+            color: #4B3CF7;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 10px 22px;
             text-decoration: none;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(75, 60, 247, 0.08);
+            transition: background 0.2s, color 0.2s;
         }
 
-        .powered-by a:hover {
-            text-decoration: underline;
+        .powered-link:hover {
+            background: #fff200;
+            color: #2d1e8a;
+        }
+
+        .status {
+            margin-top: 10px;
+            color: #FFD600;
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .ad-section {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.13) 0%, rgba(75, 60, 247, 0.10) 100%);
+            border-radius: 20px;
+            margin-top: 36px;
+            padding: 26px 22px 20px 22px;
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 6px 24px rgba(75, 60, 247, 0.13);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ad-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .ad-badge {
+            background: #FFD600;
+            color: #4B3CF7;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 0.98rem;
+            box-shadow: 0 2px 8px rgba(75, 60, 247, 0.08);
+        }
+
+        .ad-stars {
+            color: #FFD600;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .ad-recommend {
+            color: #FFD600;
+            font-size: 0.98rem;
+            font-weight: 500;
+        }
+
+        .ad-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #FFD600;
+            margin: 10px 0 4px 0;
+        }
+
+        .ad-features {
+            font-size: 1.08rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .ad-desc {
+            font-size: 1.01rem;
+            color: #fff;
+            margin: 8px 0 18px 0;
+        }
+
+        .ad-cta {
+            display: inline-block;
+            background: #FFD600;
+            color: #4B3CF7;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 10px 28px;
+            text-decoration: none;
+            font-size: 1.08rem;
+            box-shadow: 0 2px 8px rgba(75, 60, 247, 0.08);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .ad-cta:hover {
+            background: #fff200;
+            color: #2d1e8a;
+            box-shadow: 0 4px 16px rgba(75, 60, 247, 0.18);
         }
     </style>
 </head>
 
 <body>
-    <div class="option-group">
+    <div class="container">
+        <h2>No-EM-Dash Extension</h2>
         <label for="separator">Choose your preferred separator:</label>
         <select id="separator">
             <option value=",">Comma (,)</option>
@@ -52,12 +192,27 @@
             <option value="(">Parentheses ( )</option>
             <option value="-">Hyphen (-)</option>
         </select>
+        <div class="powered-by">
+            <a class="powered-link" href="https://intellipaper.ai" target="_blank" rel="noopener noreferrer">Powered by
+                intellipaper.ai</a>
+        </div>
+        <div id="status" class="status" style="display:none;"></div>
+        <div class="ad-section">
+            <div class="ad-header">
+                <span class="ad-badge">10K+ users</span>
+                <span class="ad-stars">★★★★★</span>
+                <span class="ad-recommend">Trusted by thousands worldwide</span>
+            </div>
+            <div class="ad-title">Read, Write, and Research 10x Faster</div>
+            <div class="ad-features">PDF Chat &nbsp;•&nbsp; Literature Search &nbsp;•&nbsp; AI Writing Assistant</div>
+            <div class="ad-desc">
+                Chat directly with your PDFs, search over 200 million scientific articles with AI, and write efficiently
+                using our smart AI Editor—all in one powerful tool.
+            </div>
+            <a class="ad-cta" href="https://fragdaspdf.de" target="_blank" rel="noopener noreferrer">Try FragDasPDF for
+                Free</a>
+        </div>
     </div>
-
-    <div class="powered-by">
-        Powered by <a href="https://intellipaper.ai" target="_blank">intellipaper.ai</a>
-    </div>
-
     <script src="options.js"></script>
 </body>
 
