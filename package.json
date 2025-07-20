@@ -2,17 +2,21 @@
   "license": "MIT",
   "name": "No-EM-Dash",
   "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [
     "chrome-extension",
     "em-dash",
     "chatgpt",
-    "text-replacement"
+    "text-replacement",
+    "accessibility",
+    "productivity"
   ],
   "scripts": {
     "dev": "extension dev",
     "start": "extension start",
-    "build": "extension build"
+    "build": "node build.js",
+    "clean": "rm -rf dist",
+    "package": "npm run clean && npm run build"
   },
   "dependencies": {},
   "devDependencies": {
@@ -23,5 +27,13 @@
     "name": "Matthias Neumayer, Dima Rubanov",
     "email": "matthias@intellipaper.ai",
     "url": "https://intellipaper.ai"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/No-EM-Dash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/No-EM-Dash/issues"
+  },
+  "homepage": "https://github.com/yourusername/No-EM-Dash#readme"
 }
