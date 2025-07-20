@@ -4,7 +4,7 @@
   "version": "1.0",
   "name": "No-EM-Dash",
   "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
-  "author": "Your Name",
+  "author": "Matthias Neumayer, Dima Rubanov",
   "permissions": ["storage"],
   "host_permissions": [
     "https://chat.openai.com/*",

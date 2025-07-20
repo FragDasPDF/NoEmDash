@@ -4,10 +4,10 @@
   "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
   "version": "0.0.1",
   "keywords": [
-    "extension",
-    "browser-extension",
-    "web-extension",
-    "template"
+    "chrome-extension",
+    "em-dash",
+    "chatgpt",
+    "text-replacement"
   ],
   "scripts": {
     "dev": "extension dev",
@@ -20,8 +20,8 @@
   },
   "private": true,
   "author": {
-    "name": "Your Name",
-    "email": "your@email.com",
-    "url": "https://yourwebsite.com"
+    "name": "Matthias Neumayer, Dima Rubanov",
+    "email": "matthias@intellipaper.ai",
+    "url": "https://intellipaper.ai"
   }
 }

@@ -37,3 +37,7 @@ Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites 
 ## License
 
 MIT
+
+## Powered by
+
+This extension is powered by [intellipaper.ai](https://intellipaper.ai) - Read, Write, and Research 10x Faster with PDF Chat, Literature Search, and AI Writing Assistant.
