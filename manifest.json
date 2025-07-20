@@ -9,16 +9,18 @@
   "host_permissions": [
     "https://chat.openai.com/*",
     "https://chatgpt.com/*",
-    "https://fragdaspdf.de/*",
-    "https://intellipaper.ai/*"
+    "https://intellipaper.ai/*",
+    "https://*.intellipaper.ai/*",
+    "https://fragdaspdf.de/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://chat.openai.com/*",
         "https://chatgpt.com/*",
-        "https://fragdaspdf.de/*",
-        "https://intellipaper.ai/*"
+        "https://intellipaper.ai/*",
+        "https://*.intellipaper.ai/*",
+        "https://fragdaspdf.de/*"
       ],
       "js": ["content.js"]
     }

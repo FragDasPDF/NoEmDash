@@ -5,7 +5,7 @@ Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites 
 ## Features
 
 - Automatically replaces em dashes in chat and message content
-- Works on chat.openai.com, chatgpt.com, fragdaspdf.de, and intellipaper.ai
+- Works on chat.openai.com, chatgpt.com, and intellipaper.ai
 - Choose your preferred separator in the options page
 - Modern, accessible, and responsive options UI
 - No unnecessary permissions or background scripts
