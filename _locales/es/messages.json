@@ -58,5 +58,9 @@
   "adTrusted": {
     "message": "Confiado por investigadores de todo el mundo",
     "description": "Ad trust message."
+  },
+  "viewOnGitHub": {
+    "message": "Ver en GitHub",
+    "description": "Link to the GitHub repository."
   }
 }

@@ -2,8 +2,9 @@
   "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "manifest_version": 3,
   "version": "1.0",
-  "name": "No-EM-Dash",
-  "description": "Replace em dashes in ChatGPT conversations with your preferred separator",
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
   "author": "Matthias Neumayer, Dima Rubanov",
   "permissions": ["storage"],
   "host_permissions": [

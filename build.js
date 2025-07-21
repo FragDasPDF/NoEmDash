@@ -13,23 +13,38 @@ files.forEach((file) => {
   fs.copyFileSync(file, path.join("dist", file));
 });
 
-// Copy icons and assets
-if (fs.existsSync("icons")) {
-  if (!fs.existsSync("dist/icons")) {
-    fs.mkdirSync("dist/icons");
+// Function to recursively copy a directory
+function copyDirectoryRecursive(source, destination) {
+  if (!fs.existsSync(destination)) {
+    fs.mkdirSync(destination, { recursive: true });
   }
-  fs.readdirSync("icons").forEach((file) => {
-    fs.copyFileSync(path.join("icons", file), path.join("dist/icons", file));
+
+  const files = fs.readdirSync(source);
+
+  files.forEach((file) => {
+    const sourcePath = path.join(source, file);
+    const destinationPath = path.join(destination, file);
+    const stats = fs.statSync(sourcePath);
+
+    if (stats.isDirectory()) {
+      copyDirectoryRecursive(sourcePath, destinationPath);
+    } else {
+      fs.copyFileSync(sourcePath, destinationPath);
+    }
   });
 }
 
+// Copy icons, img, and locales directories
+if (fs.existsSync("icons")) {
+  copyDirectoryRecursive("icons", "dist/icons");
+}
+
 if (fs.existsSync("img")) {
-  if (!fs.existsSync("dist/img")) {
-    fs.mkdirSync("dist/img");
-  }
-  fs.readdirSync("img").forEach((file) => {
-    fs.copyFileSync(path.join("img", file), path.join("dist/img", file));
-  });
+  copyDirectoryRecursive("img", "dist/img");
+}
+
+if (fs.existsSync("_locales")) {
+  copyDirectoryRecursive("_locales", "dist/_locales");
 }
 
 console.log("Extension built successfully");
