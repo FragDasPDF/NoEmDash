@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "No Em-Dash",
+    "message": "No-EM-Dash for ChatGPT & Intellipaper.ai",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Replaces em dashes with your preferred separator.",
+    "message": "Replaces the annoying em dashes with your preferred separator.",
     "description": "Description of the extension."
   },
   "preferredSeparator": {

@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "No Em-Dash",
+    "message": "No-EM-Dash für ChatGPT & Intellipaper.ai",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Ersetzt automatisch Em-Striche (—) auf Webseiten durch Ihr bevorzugtes Trennzeichen. Ideal für ein saubereres Leseerlebnis.",
+    "message": "Ersetzt die nervigen Gedankenstriche durch Ihr bevorzugtes Trennzeichen.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "No Em-Dash",
+    "message": "No-EM-Dash para ChatGPT & Intellipaper.ai",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Reemplaza automáticamente los guiones largos (—) en las páginas web por tu separador preferido. Ideal para una experiencia de lectura más limpia.",
+    "message": "Reemplaza las molestas rayas em con tu separador preferido.",
     "description": "Description of the extension"
   },
   "optionsTitle": {
