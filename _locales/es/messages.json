@@ -1,23 +1,27 @@
 {
   "extensionName": {
-    "message": "No-EM-Dash",
-    "description": "Name of the extension."
+    "message": "No Em-Dash",
+    "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Reemplaza las rayas (em dash) con tu separador preferido.",
-    "description": "Description of the extension."
+    "message": "Reemplaza automáticamente los guiones largos (—) en las páginas web por tu separador preferido. Ideal para una experiencia de lectura más limpia.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Opciones de No Em-Dash",
+    "description": "The title of the options page"
   },
   "preferredSeparator": {
-    "message": "Elige tu separador preferido:",
-    "description": "Label for the separator dropdown."
+    "message": "Separador Preferido",
+    "description": "Label for the separator dropdown"
   },
   "comma": {
     "message": "Coma (,)",
-    "description": "Comma separator option."
+    "description": "Comma option"
   },
   "colon": {
     "message": "Dos puntos (:)",
-    "description": "Colon separator option."
+    "description": "Colon option"
   },
   "parentheses": {
     "message": "Paréntesis ( )",
@@ -25,11 +29,23 @@
   },
   "hyphen": {
     "message": "Guión (-)",
-    "description": "Hyphen separator option."
+    "description": "Hyphen option"
+  },
+  "space": {
+    "message": "Espacio ( )",
+    "description": "Space option"
+  },
+  "custom": {
+    "message": "Personalizado",
+    "description": "Custom separator option"
+  },
+  "customSeparatorLabel": {
+    "message": "Separador Personalizado",
+    "description": "Label for the custom separator input"
   },
   "highlightReplacements": {
-    "message": "Resaltar reemplazos",
-    "description": "Label for the highlight checkbox."
+    "message": "Resaltar Reemplazos",
+    "description": "Label for the highlight checkbox"
   },
   "poweredBy": {
     "message": "Powered by fragdaspdf.de",
@@ -62,10 +78,6 @@
   "viewOnGitHub": {
     "message": "Ver en GitHub",
     "description": "Link to view source on GitHub."
-  },
-  "optionsTitle": {
-    "message": "Opciones de No-EM-Dash",
-    "description": "The title of the options page."
   },
   "statusError": {
     "message": "Error al guardar la configuración.",

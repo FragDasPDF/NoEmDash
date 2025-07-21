@@ -17,18 +17,15 @@ function addStyles() {
 function replaceEmDashes() {
   const emDash = "—";
 
-  chrome.storage.sync.get(["separator", "highlight"], function (result) {
-    const separator = result.separator || ",";
+  chrome.storage.sync.get(["separator", "customSeparator", "highlight"], function (result) {
+    let separator = result.separator || ",";
     const highlight = result.highlight === true; // default to false
-    let replacement;
 
-    if (separator === "()") {
-      replacement = "()";
-    } else if (separator === ",") {
-      replacement = ",";
-    } else {
-      replacement = separator;
+    if (separator === "custom") {
+      separator = result.customSeparator || ",";
     }
+
+    const replacement = separator;
 
     const conversationTurns = document.querySelectorAll('article[data-testid^="conversation-turn-"]');
 

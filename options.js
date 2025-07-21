@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const separatorSelect = document.getElementById("separator");
   const highlightCheckbox = document.getElementById("highlight");
   const statusElement = document.getElementById("status");
+  const customSeparatorWrapper = document.getElementById("custom-separator-wrapper");
+  const customSeparatorInput = document.getElementById("custom-separator");
 
   if (!separatorSelect) {
     console.error("Separator select element not found");
@@ -20,9 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Load saved preferences
-  chrome.storage.sync.get(["separator", "highlight"], function (result) {
+  chrome.storage.sync.get(["separator", "customSeparator", "highlight"], function (result) {
     if (result.separator) {
       separatorSelect.value = result.separator;
+    }
+    if (result.separator === "custom") {
+      customSeparatorWrapper.style.display = "block";
+      customSeparatorInput.value = result.customSeparator || "";
     }
     highlightCheckbox.checked = !!result.highlight;
   });
@@ -31,8 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
   function saveSettings() {
     const separator = separatorSelect.value;
     const highlight = highlightCheckbox.checked;
+    let settings = { separator, highlight };
 
-    chrome.storage.sync.set({ separator, highlight }, function () {
+    if (separator === "custom") {
+      const customSeparator = customSeparatorInput.value;
+      if (customSeparator) {
+        settings.customSeparator = customSeparator;
+      }
+    }
+
+    chrome.storage.sync.set(settings, function () {
       if (chrome.runtime.lastError) {
         console.error("Error saving settings:", chrome.runtime.lastError);
         statusElement.textContent = chrome.i18n.getMessage("statusError");
@@ -49,7 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Show/hide custom separator input
+  separatorSelect.addEventListener("change", () => {
+    if (separatorSelect.value === "custom") {
+      customSeparatorWrapper.style.display = "block";
+    } else {
+      customSeparatorWrapper.style.display = "none";
+    }
+  });
+
   // Add event listeners to save settings when they change
   separatorSelect.addEventListener("change", saveSettings);
+  customSeparatorInput.addEventListener("input", saveSettings);
   highlightCheckbox.addEventListener("change", saveSettings);
 });

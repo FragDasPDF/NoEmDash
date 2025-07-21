@@ -63,6 +63,35 @@
             box-shadow: 0 0 0 2px #FFD600;
         }
 
+        #custom-separator-wrapper {
+            width: 100%;
+        }
+
+        #custom-separator-wrapper label {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input#custom-separator {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 12px;
+            border: none;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            background: #fff;
+            color: #222;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(75, 60, 247, 0.08);
+            outline: none;
+            transition: box-shadow 0.2s;
+            box-sizing: border-box;
+        }
+
+        input#custom-separator:focus {
+            box-shadow: 0 0 0 2px #FFD600;
+        }
+
         .option-item {
             display: flex;
             align-items: center;
@@ -208,9 +237,14 @@
         <select id="separator">
             <option value="," data-localize="comma"></option>
             <option value=":" data-localize="colon"></option>
-            <option value="()" data-localize="parentheses"></option>
             <option value="-" data-localize="hyphen"></option>
+            <option value=" " data-localize="space"></option>
+            <option value="custom" data-localize="custom"></option>
         </select>
+        <div id="custom-separator-wrapper" style="display: none;">
+            <label for="custom-separator" data-localize="customSeparatorLabel"></label>
+            <input type="text" id="custom-separator" maxlength="5">
+        </div>
         <div class="option-item">
             <input type="checkbox" id="highlight" name="highlight">
             <label for="highlight" data-localize="highlightReplacements"></label>

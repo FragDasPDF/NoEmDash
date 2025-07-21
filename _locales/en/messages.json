@@ -1,23 +1,23 @@
 {
   "extensionName": {
-    "message": "No-EM-Dash",
-    "description": "Name of the extension."
+    "message": "No Em-Dash",
+    "description": "Name of the extension"
   },
   "extensionDescription": {
     "message": "Replaces em dashes with your preferred separator.",
     "description": "Description of the extension."
   },
   "preferredSeparator": {
-    "message": "Choose your preferred separator:",
-    "description": "Label for the separator dropdown."
+    "message": "Preferred Separator",
+    "description": "Label for the separator dropdown"
   },
   "comma": {
     "message": "Comma (,)",
-    "description": "Comma separator option."
+    "description": "Comma option"
   },
   "colon": {
     "message": "Colon (:)",
-    "description": "Colon separator option."
+    "description": "Colon option"
   },
   "parentheses": {
     "message": "Parentheses ( )",
@@ -25,11 +25,23 @@
   },
   "hyphen": {
     "message": "Hyphen (-)",
-    "description": "Hyphen separator option."
+    "description": "Hyphen option"
+  },
+  "space": {
+    "message": "Space ( )",
+    "description": "Space option"
+  },
+  "custom": {
+    "message": "Custom",
+    "description": "Custom separator option"
+  },
+  "customSeparatorLabel": {
+    "message": "Custom Separator",
+    "description": "Label for the custom separator input"
   },
   "highlightReplacements": {
-    "message": "Highlight replacements",
-    "description": "Label for the highlight checkbox."
+    "message": "Highlight Replacements",
+    "description": "Label for the highlight checkbox"
   },
   "poweredBy": {
     "message": "Powered by fragdaspdf.de",
@@ -64,8 +76,8 @@
     "description": "Link to view source on GitHub."
   },
   "optionsTitle": {
-    "message": "No-EM-Dash Options",
-    "description": "The title of the options page."
+    "message": "No Em-Dash Options",
+    "description": "Title of the options page"
   },
   "statusError": {
     "message": "Error saving settings.",
