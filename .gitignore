@@ -25,3 +25,4 @@ yarn-error.log*
 
 # extension.js
 extension-env.d.ts
+dist.zip

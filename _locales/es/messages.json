@@ -61,6 +61,14 @@
   },
   "viewOnGitHub": {
     "message": "Ver en GitHub",
-    "description": "Link to the GitHub repository."
+    "description": "Link to view source on GitHub."
+  },
+  "optionsTitle": {
+    "message": "Opciones de No-EM-Dash",
+    "description": "The title of the options page."
+  },
+  "statusError": {
+    "message": "Error al guardar la configuración.",
+    "description": "Status message when options saving fails."
   }
 }

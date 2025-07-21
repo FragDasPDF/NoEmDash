@@ -56,11 +56,19 @@
     "description": "Ad call to action."
   },
   "adTrusted": {
-    "message": "Vertraut von Forschern weltweit",
+    "message": "Wird von Forschern weltweit als vertrauenswürdig eingestuft",
     "description": "Ad trust message."
   },
   "viewOnGitHub": {
     "message": "Auf GitHub ansehen",
-    "description": "Link to the GitHub repository."
+    "description": "Link to view source on GitHub."
+  },
+  "optionsTitle": {
+    "message": "No-EM-Dash Optionen",
+    "description": "The title of the options page."
+  },
+  "statusError": {
+    "message": "Fehler beim Speichern der Einstellungen.",
+    "description": "Status message when options saving fails."
   }
 }

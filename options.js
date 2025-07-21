@@ -24,8 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (result.separator) {
       separatorSelect.value = result.separator;
     }
-    // highlight defaults to off if it's not explicitly set to true
-    highlightCheckbox.checked = result.highlight === true;
+    highlightCheckbox.checked = !!result.highlight;
   });
 
   // Function to save settings
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chrome.storage.sync.set({ separator, highlight }, function () {
       if (chrome.runtime.lastError) {
         console.error("Error saving settings:", chrome.runtime.lastError);
-        statusElement.textContent = "Error saving settings.";
+        statusElement.textContent = chrome.i18n.getMessage("statusError");
         statusElement.style.color = "#ff6b6b";
       } else {
         statusElement.textContent = chrome.i18n.getMessage("statusSaved");

@@ -3,8 +3,8 @@
   "manifest_version": 3,
   "version": "1.0",
   "default_locale": "en",
-  "name": "__MSG_extensionName__",
-  "description": "__MSG_extensionDescription__",
+  "name": "No-EM-Dash for ChatGPT & Intellipaper.ai",
+  "description": "Replaces the annoying em dashes with your preferred separator.",
   "author": "Matthias Neumayer, Dima Rubanov",
   "permissions": ["storage"],
   "host_permissions": [

@@ -58,5 +58,17 @@
   "adTrusted": {
     "message": "Trusted by researchers worldwide",
     "description": "Ad trust message."
+  },
+  "viewOnGitHub": {
+    "message": "View on GitHub",
+    "description": "Link to view source on GitHub."
+  },
+  "optionsTitle": {
+    "message": "No-EM-Dash Options",
+    "description": "The title of the options page."
+  },
+  "statusError": {
+    "message": "Error saving settings.",
+    "description": "Status message when options saving fails."
   }
 }

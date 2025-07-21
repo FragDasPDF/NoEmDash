@@ -15,9 +15,10 @@
     "dev": "extension dev",
     "start": "extension start",
     "build": "node build.js",
-    "clean": "rm -rf dist",
-    "package": "npm run clean && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist dist.zip",
+    "package": "npm run clean && npm run build && npm run zip",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "cd dist && zip -r ../dist.zip ."
   },
   "dependencies": {},
   "devDependencies": {

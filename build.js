@@ -7,7 +7,7 @@ if (!fs.existsSync("dist")) {
 }
 
 // Copy extension files
-const files = ["manifest.json", "content.js", "options.html", "options.js"];
+const files = ["manifest.json", "content.js", "options.html", "options.js", "i18n.js"];
 
 files.forEach((file) => {
   fs.copyFileSync(file, path.join("dist", file));

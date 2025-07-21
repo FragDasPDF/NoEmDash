@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>No-EM-Dash Options</title>
+    <title>__MSG_optionsTitle__</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -203,43 +203,44 @@
 
 <body>
     <div class="container">
-        <h2>__MSG_extensionName__</h2>
-        <label for="separator">__MSG_preferredSeparator__</label>
+        <h2 data-localize="extensionName"></h2>
+        <label for="separator" data-localize="preferredSeparator"></label>
         <select id="separator">
-            <option value=",">__MSG_comma__</option>
-            <option value=":">__MSG_colon__</option>
-            <option value="()">__MSG_parentheses__</option>
-            <option value="-">__MSG_hyphen__</option>
+            <option value="," data-localize="comma"></option>
+            <option value=":" data-localize="colon"></option>
+            <option value="()" data-localize="parentheses"></option>
+            <option value="-" data-localize="hyphen"></option>
         </select>
         <div class="option-item">
             <input type="checkbox" id="highlight" name="highlight">
-            <label for="highlight">__MSG_highlightReplacements__</label>
+            <label for="highlight" data-localize="highlightReplacements"></label>
         </div>
         <div class="powered-by">
-            <a class="powered-link" href="https://fragdaspdf.de" target="_blank"
-                rel="noopener noreferrer">__MSG_poweredBy__</a>
+            <a class="powered-link" href="https://fragdaspdf.de" target="_blank" rel="noopener noreferrer"
+                data-localize="poweredBy"></a>
         </div>
         <div id="status" class="status" style="display:none;"></div>
         <div class="ad-section">
             <div class="ad-header">
                 <img src="img/logo.svg" alt="fragdaspdf.de" class="ad-logo" onerror="this.style.display='none'">
-                <span class="ad-recommend">__MSG_adTrusted__</span>
+                <span class="ad-recommend" data-localize="adTrusted"></span>
             </div>
-            <div class="ad-title">__MSG_adTitle__</div>
-            <div class="ad-features">__MSG_adFeatures__</div>
-            <div class="ad-desc">
-                __MSG_adDescription__
+            <div class="ad-title" data-localize="adTitle"></div>
+            <div class="ad-features" data-localize="adFeatures"></div>
+            <div class="ad-desc" data-localize="adDescription">
             </div>
-            <a class="ad-cta" href="https://fragdaspdf.de" target="_blank" rel="noopener noreferrer">__MSG_adCTA__</a>
+            <a class="ad-cta" href="https://fragdaspdf.de" target="_blank" rel="noopener noreferrer"
+                data-localize="adCTA"></a>
         </div>
         <div class="powered-by">
             <a href="https://github.com/FragDasPDF/NoEmDash" target="_blank" rel="noopener noreferrer"
-                style="color: #fff; text-decoration: none; opacity: 0.7; font-size: .9rem;">
-                __MSG_viewOnGitHub__
+                style="color: #fff; text-decoration: none; opacity: 0.7; font-size: .9rem;"
+                data-localize="viewOnGitHub">
             </a>
         </div>
     </div>
     <script src="options.js"></script>
+    <script src="i18n.js"></script>
 </body>
 
 </html>
