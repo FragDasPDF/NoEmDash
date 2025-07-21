@@ -19,7 +19,7 @@ function replaceEmDashes() {
 
   chrome.storage.sync.get(["separator", "highlight"], function (result) {
     const separator = result.separator || ",";
-    const highlight = result.highlight !== false; // default to true
+    const highlight = result.highlight === true; // default to false
     let replacement;
 
     if (separator === "()") {
@@ -130,7 +130,7 @@ const observer = new MutationObserver((mutations) => {
 
 window.addEventListener("load", () => {
   chrome.storage.sync.get("highlight", (result) => {
-    if (result.highlight !== false) {
+    if (result.highlight === true) {
       addStyles();
     }
   });

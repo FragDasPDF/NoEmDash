@@ -19,26 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  chrome.storage.sync.get(["separator"], function (result) {
+  // Load saved preferences
+  chrome.storage.sync.get(["separator", "highlight"], function (result) {
     if (result.separator) {
       separatorSelect.value = result.separator;
     }
-    if (result.highlight) {
-      highlightCheckbox.checked = result.highlight;
-    }
+    // highlight defaults to off if it's not explicitly set to true
+    highlightCheckbox.checked = result.highlight === true;
   });
-});
 
-// Save when changed
-document.addEventListener("DOMContentLoaded", () => {
-  const separatorSelect = document.getElementById("separator");
-  const highlightCheckbox = document.getElementById("highlight");
-  const statusElement = document.getElementById("status");
-
-  if (!separatorSelect || !statusElement || !highlightCheckbox) {
-    return;
-  }
-
+  // Function to save settings
   function saveSettings() {
     const separator = separatorSelect.value;
     const highlight = highlightCheckbox.checked;
@@ -60,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Add event listeners to save settings when they change
   separatorSelect.addEventListener("change", saveSettings);
   highlightCheckbox.addEventListener("change", saveSettings);
 });

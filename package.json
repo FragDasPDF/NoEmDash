@@ -23,18 +23,18 @@
   "devDependencies": {
     "extension": "^2.0.0-rc.23"
   },
-  "private": true,
+  "private": false,
   "author": {
-    "name": "Matthias Neumayer",
-    "email": "matthias@fragdaspdf.de",
+    "name": "Matthias Neumayer, Dima Rubanov",
+    "email": "hello@fragdaspdf.de",
     "url": "https://fragdaspdf.de"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/No-EM-Dash.git"
+    "url": "https://github.com/FragDasPDF/NoEmDash.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/No-EM-Dash/issues"
+    "url": "https://github.com/FragDasPDF/NoEmDash/issues"
   },
-  "homepage": "https://github.com/yourusername/No-EM-Dash#readme"
+  "homepage": "https://fragdaspdf.de"
 }
