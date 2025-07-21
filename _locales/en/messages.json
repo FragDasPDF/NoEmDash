@@ -1,0 +1,62 @@
+{
+  "extensionName": {
+    "message": "No-EM-Dash",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Replaces em dashes with your preferred separator.",
+    "description": "Description of the extension."
+  },
+  "preferredSeparator": {
+    "message": "Choose your preferred separator:",
+    "description": "Label for the separator dropdown."
+  },
+  "comma": {
+    "message": "Comma (,)",
+    "description": "Comma separator option."
+  },
+  "colon": {
+    "message": "Colon (:)",
+    "description": "Colon separator option."
+  },
+  "parentheses": {
+    "message": "Parentheses ( )",
+    "description": "Parentheses separator option."
+  },
+  "hyphen": {
+    "message": "Hyphen (-)",
+    "description": "Hyphen separator option."
+  },
+  "highlightReplacements": {
+    "message": "Highlight replacements",
+    "description": "Label for the highlight checkbox."
+  },
+  "poweredBy": {
+    "message": "Powered by fragdaspdf.de",
+    "description": "Powered by text."
+  },
+  "statusSaved": {
+    "message": "Options saved.",
+    "description": "Status message when options are saved."
+  },
+  "adTitle": {
+    "message": "Read, Write, and Research 10x Faster",
+    "description": "Ad title."
+  },
+  "adFeatures": {
+    "message": "PDF Chat &nbsp;•&nbsp; Literature Search &nbsp;•&nbsp; AI Writing Assistant",
+    "description": "Ad features."
+  },
+  "adDescription": {
+    "message": "Chat directly with your PDFs, search over 200 million scientific articles with AI, and write efficiently using our smart AI Editor—all in one powerful tool.",
+    "description": "Ad description."
+  },
+  "adCTA": {
+    "message": "Try fragdaspdf.de for Free",
+    "description": "Ad call to action."
+  },
+  "adTrusted": {
+    "message": "Trusted by researchers worldwide",
+    "description": "Ad trust message."
+  }
+}

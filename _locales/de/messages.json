@@ -1,0 +1,62 @@
+{
+  "extensionName": {
+    "message": "No-EM-Dash",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Ersetzt Geviertstriche durch Ihr bevorzugtes Trennzeichen.",
+    "description": "Description of the extension."
+  },
+  "preferredSeparator": {
+    "message": "Wählen Sie Ihr bevorzugtes Trennzeichen:",
+    "description": "Label for the separator dropdown."
+  },
+  "comma": {
+    "message": "Komma (,)",
+    "description": "Comma separator option."
+  },
+  "colon": {
+    "message": "Doppelpunkt (:)",
+    "description": "Colon separator option."
+  },
+  "parentheses": {
+    "message": "Klammern ( )",
+    "description": "Parentheses separator option."
+  },
+  "hyphen": {
+    "message": "Bindestrich (-)",
+    "description": "Hyphen separator option."
+  },
+  "highlightReplacements": {
+    "message": "Ersetzungen hervorheben",
+    "description": "Label for the highlight checkbox."
+  },
+  "poweredBy": {
+    "message": "Powered by fragdaspdf.de",
+    "description": "Powered by text."
+  },
+  "statusSaved": {
+    "message": "Optionen gespeichert.",
+    "description": "Status message when options are saved."
+  },
+  "adTitle": {
+    "message": "10x schneller lesen, schreiben und recherchieren",
+    "description": "Ad title."
+  },
+  "adFeatures": {
+    "message": "PDF-Chat &nbsp;•&nbsp; Literatursuche &nbsp;•&nbsp; KI-Schreibassistent",
+    "description": "Ad features."
+  },
+  "adDescription": {
+    "message": "Chatten Sie direkt mit Ihren PDFs, durchsuchen Sie mit KI über 200 Millionen wissenschaftliche Artikel und schreiben Sie effizient mit unserem intelligenten KI-Editor – alles in einem leistungsstarken Werkzeug.",
+    "description": "Ad description."
+  },
+  "adCTA": {
+    "message": "fragdaspdf.de kostenlos testen",
+    "description": "Ad call to action."
+  },
+  "adTrusted": {
+    "message": "Vertraut von Forschern weltweit",
+    "description": "Ad trust message."
+  }
+}

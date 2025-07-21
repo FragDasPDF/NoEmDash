@@ -63,6 +63,19 @@
             box-shadow: 0 0 0 2px #FFD600;
         }
 
+        .option-item {
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .option-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+        }
+
         .powered-by {
             margin-top: 24px;
             text-align: center;
@@ -190,33 +203,34 @@
 
 <body>
     <div class="container">
-        <h2>No-EM-Dash Extension</h2>
-        <label for="separator">Choose your preferred separator:</label>
+        <h2>__MSG_extensionName__</h2>
+        <label for="separator">__MSG_preferredSeparator__</label>
         <select id="separator">
-            <option value=",">Comma (,)</option>
-            <option value=":">Colon (:)</option>
-            <option value="()">Parentheses ( )</option>
-            <option value="-">Hyphen (-)</option>
+            <option value=",">__MSG_comma__</option>
+            <option value=":">__MSG_colon__</option>
+            <option value="()">__MSG_parentheses__</option>
+            <option value="-">__MSG_hyphen__</option>
         </select>
+        <div class="option-item">
+            <input type="checkbox" id="highlight" name="highlight">
+            <label for="highlight">__MSG_highlightReplacements__</label>
+        </div>
         <div class="powered-by">
-            <a class="powered-link" href="https://intellipaper.ai" target="_blank" rel="noopener noreferrer">Powered by
-                intellipaper.ai</a>
+            <a class="powered-link" href="https://fragdaspdf.de" target="_blank"
+                rel="noopener noreferrer">__MSG_poweredBy__</a>
         </div>
         <div id="status" class="status" style="display:none;"></div>
         <div class="ad-section">
             <div class="ad-header">
-                <img src="img/logo.svg" alt="intellipaper.ai" class="ad-logo" onerror="this.style.display='none'">
-                <span class="ad-recommend">Trusted by researchers worldwide</span>
+                <img src="img/logo.svg" alt="fragdaspdf.de" class="ad-logo" onerror="this.style.display='none'">
+                <span class="ad-recommend">__MSG_adTrusted__</span>
             </div>
-            <div class="ad-title">Read, Write, and Research 10x Faster</div>
-            <div class="ad-features">PDF Chat &nbsp;•&nbsp; Literature Search &nbsp;•&nbsp; AI Writing Assistant</div>
+            <div class="ad-title">__MSG_adTitle__</div>
+            <div class="ad-features">__MSG_adFeatures__</div>
             <div class="ad-desc">
-                Chat directly with your PDFs, search over 200 million scientific articles with AI, and write efficiently
-                using our smart AI Editor—all in one powerful tool.
+                __MSG_adDescription__
             </div>
-            <a class="ad-cta" href="https://intellipaper.ai" target="_blank" rel="noopener noreferrer">Try
-                intellipaper.ai for
-                Free</a>
+            <a class="ad-cta" href="https://fragdaspdf.de" target="_blank" rel="noopener noreferrer">__MSG_adCTA__</a>
         </div>
     </div>
     <script src="options.js"></script>

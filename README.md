@@ -5,7 +5,7 @@ Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites 
 ## Features
 
 - **Automatic Replacement**: Automatically replaces em dashes in chat and message content
-- **Multi-Site Support**: Works on chat.openai.com, chatgpt.com, intellipaper.ai, and fragdaspdf.de
+- **Multi-Site Support**: Works on chat.openai.com, chatgpt.com, and fragdaspdf.de
 - **Customizable Separators**: Choose your preferred separator in the options page
 - **Real-time Updates**: Changes apply immediately without page refresh
 - **Modern UI**: Clean, accessible, and responsive options interface
@@ -188,15 +188,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Powered by [intellipaper.ai](https://intellipaper.ai) - Read, Write, and Research 10x Faster
+- Powered by [fragdaspdf.de](https://fragdaspdf.de) - Read, Write, and Research 10x Faster
 - Built with modern Chrome extension best practices
 - Inspired by the need for better text formatting in AI conversations
 
 ## 📞 Support
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/No-EM-Dash/issues)
-- **Email**: matthias@intellipaper.ai
-- **Website**: [intellipaper.ai](https://intellipaper.ai)
+- **Email**: matthias@fragdaspdf.de
+- **Website**: [fragdaspdf.de](https://fragdaspdf.de)
 
 ---
 

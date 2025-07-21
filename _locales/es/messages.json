@@ -1,0 +1,62 @@
+{
+  "extensionName": {
+    "message": "No-EM-Dash",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Reemplaza las rayas (em dash) con tu separador preferido.",
+    "description": "Description of the extension."
+  },
+  "preferredSeparator": {
+    "message": "Elige tu separador preferido:",
+    "description": "Label for the separator dropdown."
+  },
+  "comma": {
+    "message": "Coma (,)",
+    "description": "Comma separator option."
+  },
+  "colon": {
+    "message": "Dos puntos (:)",
+    "description": "Colon separator option."
+  },
+  "parentheses": {
+    "message": "Paréntesis ( )",
+    "description": "Parentheses separator option."
+  },
+  "hyphen": {
+    "message": "Guión (-)",
+    "description": "Hyphen separator option."
+  },
+  "highlightReplacements": {
+    "message": "Resaltar reemplazos",
+    "description": "Label for the highlight checkbox."
+  },
+  "poweredBy": {
+    "message": "Powered by fragdaspdf.de",
+    "description": "Powered by text."
+  },
+  "statusSaved": {
+    "message": "Opciones guardadas.",
+    "description": "Status message when options are saved."
+  },
+  "adTitle": {
+    "message": "Lee, escribe e investiga 10 veces más rápido",
+    "description": "Ad title."
+  },
+  "adFeatures": {
+    "message": "Chat con PDF &nbsp;•&nbsp; Búsqueda de literatura &nbsp;•&nbsp; Asistente de escritura con IA",
+    "description": "Ad features."
+  },
+  "adDescription": {
+    "message": "Chatea directamente con tus PDF, busca en más de 200 millones de artículos científicos con IA y escribe de manera eficiente con nuestro editor de IA inteligente, todo en una potente herramienta.",
+    "description": "Ad description."
+  },
+  "adCTA": {
+    "message": "Prueba fragdaspdf.de gratis",
+    "description": "Ad call to action."
+  },
+  "adTrusted": {
+    "message": "Confiado por investigadores de todo el mundo",
+    "description": "Ad trust message."
+  }
+}

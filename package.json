@@ -16,7 +16,8 @@
     "start": "extension start",
     "build": "node build.js",
     "clean": "rm -rf dist",
-    "package": "npm run clean && npm run build"
+    "package": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,9 +25,9 @@
   },
   "private": true,
   "author": {
-    "name": "Matthias Neumayer, Dima Rubanov",
-    "email": "matthias@intellipaper.ai",
-    "url": "https://intellipaper.ai"
+    "name": "Matthias Neumayer",
+    "email": "matthias@fragdaspdf.de",
+    "url": "https://fragdaspdf.de"
   },
   "repository": {
     "type": "git",
