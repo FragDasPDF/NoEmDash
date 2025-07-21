@@ -41,7 +41,7 @@ Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites 
 - Use the root folder directly if you prefer not to build
 - Follow steps 3-5 from above, but select the root folder instead
 
-## 🎯 Usage
+## Usage
 
 1. **Automatic Operation**: The extension works automatically on supported sites
 2. **Change Settings**:
@@ -80,46 +80,6 @@ No-EM-Dash/
 - `npm run clean` - Remove the `dist/` folder
 - `npm run package` - Clean and rebuild the extension
 
-### Best Practices Implemented
-
-#### Security
-
-- ✅ Content Security Policy (CSP) configured
-- ✅ Input sanitization to prevent XSS
-- ✅ Minimal permissions (only `storage`)
-- ✅ Secure external links with `rel="noopener noreferrer"`
-
-#### Performance
-
-- ✅ Debounced DOM operations (300ms delay)
-- ✅ Efficient mutation observer with targeted checks
-- ✅ Lazy loading and cleanup on page unload
-- ✅ Optimized selectors and DOM queries
-
-#### Accessibility
-
-- ✅ ARIA labels and roles
-- ✅ Keyboard navigation support
-- ✅ Screen reader friendly
-- ✅ High contrast color schemes
-- ✅ Semantic HTML structure
-
-#### User Experience
-
-- ✅ Real-time status feedback
-- ✅ Error handling with user-friendly messages
-- ✅ Loading states and progress indicators
-- ✅ Responsive design for all screen sizes
-- ✅ Intuitive popup interface
-
-#### Code Quality
-
-- ✅ Strict mode JavaScript
-- ✅ Comprehensive error handling
-- ✅ Consistent code formatting
-- ✅ Modular architecture
-- ✅ Clear documentation
-
 ## 🔧 Technical Details
 
 ### Manifest V3 Compliance
@@ -141,30 +101,7 @@ No-EM-Dash/
 - Handles dynamic content loading
 - Includes proper cleanup and error handling
 
-## 🐛 Troubleshooting
 
-### Common Issues
-
-**Extension not working on a site:**
-
-- Check if the site is in the supported domains list
-- Ensure the extension is enabled
-- Try refreshing the page
-
-**Settings not saving:**
-
-- Check Chrome's storage permissions
-- Try disabling and re-enabling the extension
-- Clear browser cache if needed
-
-**Performance issues:**
-
-- The extension includes debouncing to prevent excessive DOM manipulation
-- Check browser console for any error messages
-
-### Debug Mode
-
-Enable debug logging by opening the browser console and looking for "No-EM-Dash" messages.
 
 ## 🤝 Contributing
 
@@ -192,12 +129,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with modern Chrome extension best practices
 - Inspired by the need for better text formatting in AI conversations
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/No-EM-Dash/issues)
-- **Email**: matthias@fragdaspdf.de
-- **Website**: [fragdaspdf.de](https://fragdaspdf.de)
-
----
-
-**Note**: This extension does not collect, store, or transmit any user data. All processing happens locally in your browser.
