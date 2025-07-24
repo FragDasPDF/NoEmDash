@@ -2,6 +2,8 @@
 
 Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites with your preferred separator (comma, colon, parentheses, or hyphen).
 
+[Install on Chrome Web Store](https://chromewebstore.google.com/detail/icpfenabnnehflbfkkpalgpkocnflkba?utm_source=item-share-cp)icpfenabnnehflbfkkpalgpkocnflkba
+
 ## Features
 
 - **Automatic Replacement**: Automatically replaces em dashes in chat and message content
@@ -14,6 +16,10 @@ Replace em dashes (—) in ChatGPT, FragDasPDF, Intellipaper, and similar sites 
 - **Performance Optimized**: Efficient DOM manipulation with debouncing
 
 ## Installation
+
+### Chrome Webstore
+
+[Install – Chrome Web Store](https://chromewebstore.google.com/detail/icpfenabnnehflbfkkpalgpkocnflkba?utm_source=item-share-cp)
 
 ### From Source
 
