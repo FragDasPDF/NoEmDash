@@ -43,6 +43,10 @@
     "message": "Benutzerdefinierter Separator",
     "description": "Label for the custom separator input"
   },
+  "enableExtension": {
+    "message": "Erweiterung aktivieren",
+    "description": "Label for the enable/disable checkbox"
+  },
   "highlightReplacements": {
     "message": "Ersetzungen hervorheben",
     "description": "Label for the highlight checkbox"

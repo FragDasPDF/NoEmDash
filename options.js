@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const separatorSelect = document.getElementById("separator");
   const highlightCheckbox = document.getElementById("highlight");
+  const enabledCheckbox = document.getElementById("enabled");
   const statusElement = document.getElementById("status");
   const customSeparatorWrapper = document.getElementById("custom-separator-wrapper");
   const customSeparatorInput = document.getElementById("custom-separator");
@@ -16,13 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  if (!enabledCheckbox) {
+    console.error("Enabled checkbox element not found");
+    return;
+  }
+
   if (!statusElement) {
     console.error("Status element not found");
     return;
   }
 
   // Load saved preferences
-  chrome.storage.sync.get(["separator", "customSeparator", "highlight"], function (result) {
+  chrome.storage.sync.get(["separator", "customSeparator", "highlight", "enabled"], function (result) {
     if (result.separator) {
       separatorSelect.value = result.separator;
     }
@@ -31,13 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
       customSeparatorInput.value = result.customSeparator || "";
     }
     highlightCheckbox.checked = !!result.highlight;
+    // Default to enabled if not set (backwards compatibility)
+    enabledCheckbox.checked = result.enabled !== false;
   });
 
   // Function to save settings
   function saveSettings() {
     const separator = separatorSelect.value;
     const highlight = highlightCheckbox.checked;
-    let settings = { separator, highlight };
+    const enabled = enabledCheckbox.checked;
+    let settings = { separator, highlight, enabled };
 
     if (separator === "custom") {
       const customSeparator = customSeparatorInput.value;
@@ -76,4 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
   separatorSelect.addEventListener("change", saveSettings);
   customSeparatorInput.addEventListener("input", saveSettings);
   highlightCheckbox.addEventListener("change", saveSettings);
+  enabledCheckbox.addEventListener("change", saveSettings);
 });
