@@ -39,6 +39,10 @@
     "message": "Custom Separator",
     "description": "Label for the custom separator input"
   },
+  "enableExtension": {
+    "message": "Enable extension",
+    "description": "Label for the enable/disable checkbox"
+  },
   "highlightReplacements": {
     "message": "Highlight Replacements",
     "description": "Label for the highlight checkbox"
